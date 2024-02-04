@@ -1,3 +1,6 @@
 #include "multythread.h"
 
-MultyThread::MultyThread() {}
+MultyThread::MultyThread(QObject *parent) : QObject(parent)
+{
+
+}

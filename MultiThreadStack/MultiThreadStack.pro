@@ -5,8 +5,10 @@ QT += quick core
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        firstthread.cpp \
         main.cpp \
-        multythread.cpp
+        multythread.cpp \
+        secthread.cpp
 
 RESOURCES += qml.qrc
 
@@ -25,4 +27,6 @@ DISTFILES += \
     interface.qml
 
 HEADERS += \
-    multythread.h
+    firstthread.h \
+    multythread.h \
+    secthread.h
