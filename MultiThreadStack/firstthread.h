@@ -4,11 +4,19 @@
 #include <QObject>
 #include <QThread>
 
-class FirstThread : public QThread
+class FirstThread : public QObject
 {
     Q_OBJECT
 public:
     Q_INVOKABLE FirstThread(QObject *parent = nullptr);
+
+signals:
+    void   dataFirstToMain();
+
+public slots:
+    void       startThread();
+    void dataFirstFromMain();
+
 };
 
 #endif // FIRSTTHREAD_H

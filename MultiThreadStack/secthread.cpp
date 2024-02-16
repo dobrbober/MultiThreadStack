@@ -1,5 +1,6 @@
 #include "secthread.h"
 
-SecThread::SecThread(QObject *parent)
-    : QThread{parent}
-{}
+SecThread::SecThread(QObject *parent) : QObject(parent)
+{
+
+}

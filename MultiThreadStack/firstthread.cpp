@@ -1,5 +1,6 @@
 #include "firstthread.h"
 
-FirstThread::FirstThread(QObject *parent)
-    : QThread{parent}
-{}
+FirstThread::FirstThread(QObject *parent) : QObject(parent)
+{
+
+}
