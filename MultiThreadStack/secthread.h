@@ -16,6 +16,7 @@ signals:
 public slots:
     void     startThread();
     void dataSecFromMain();
+    void      stopThread();
 };
 
 #endif // SECTHREAD_H

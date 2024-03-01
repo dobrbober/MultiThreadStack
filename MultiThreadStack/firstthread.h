@@ -16,6 +16,7 @@ signals:
 public slots:
     void       startThread();
     void dataFirstFromMain();
+    void        stopThread();
 
 };
 

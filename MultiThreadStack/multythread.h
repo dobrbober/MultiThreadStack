@@ -15,16 +15,15 @@ public:
     Q_INVOKABLE  MultyThread(QObject *parent = nullptr);
     Q_INVOKABLE ~MultyThread();
     Q_INVOKABLE  CreateQueue();
-    Q_INVOKABLE  StartTreads();
-    Q_INVOKABLE     DelQueue();
+    Q_INVOKABLE  StartThreads();
+
+signals:
+    void       queueEmpty(bool);
+    void startFandSTreads(bool);
 
 public slots:
     void datafromFirstTread();
     void   datafromSecTread();
-
-signals:
-    void       queueEmpty();
-    void startFandSTreads();
 };
 
 #endif // MULTYTHREAD_H
